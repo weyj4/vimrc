@@ -12,7 +12,6 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'Shougo/unite.vim'
 Plug 'rking/ag.vim'
-Plug 'wookiehangover/jshint.vim'
 call plug#end()
 
 
