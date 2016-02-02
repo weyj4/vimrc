@@ -5,6 +5,7 @@ set expandtab
 set visualbell
 set t_vb=
 set number
+set backspace=2
 
 call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
@@ -12,6 +13,9 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'Shougo/vimproc.vim', {'do': 'make'}
 Plug 'Shougo/unite.vim'
 Plug 'rking/ag.vim'
+Plug 'mxw/vim-jsx'
+Plug 'scrooloose/syntastic'
+Plug 'pangloss/vim-javascript'
 call plug#end()
 
 
@@ -47,3 +51,11 @@ nnoremap <space><space> :vsplit<cr> :<C-u>Unite -start-insert file_rec/async<cr>
 
 " -- ag config
 nnoremap <space>/ :Ag
+
+" -- jsx config
+let g:jsx_ext_required = 0
+
+" -- syntastic config
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
