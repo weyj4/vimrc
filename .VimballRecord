@@ -1,0 +1,1 @@
+localvimrc.vba: call delete('/home/tjwebb/.vim/plugin/localvimrc.vim')|call delete('/home/tjwebb/.vim/doc/localvimrc.txt')
